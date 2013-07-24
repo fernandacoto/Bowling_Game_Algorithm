@@ -38,8 +38,6 @@ module Bowling_Game_Algorithm
       if current_frame + 1 < 21
         if @frames[current_frame] + @frames[current_frame + 1] == 10
           return true
-        else
-          return false
         end
       else
         return false
