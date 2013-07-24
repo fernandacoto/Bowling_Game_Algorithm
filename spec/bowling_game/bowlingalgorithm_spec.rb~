@@ -1,0 +1,19 @@
+require 'spec_helper'
+module Bowling_Game_Algorithm
+  describe Bowling_Algorithm do
+    context "#start" do
+      it "sends a welcome message" do
+        output = double('output').as_null_object
+        algorithm = Bowling_Algorithm.new(output)
+        output.should_receive(:puts).with('Welcome to the Bowling Game Algorithm!')
+        algorithm.start
+      end
+      it "prompts for the first square (the 2 numbers of the amount of pins fallen)" do
+        output = double('output').as_null_object
+        algorithm = Bowling_Algorithm.new(output)
+        output.should_receive(:puts).with("Enter the number of pins fallen:")
+        algorithm.start
+      end
+    end
+  end
+end
