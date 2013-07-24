@@ -8,10 +8,10 @@ module Bowling_Game_Algorithm
         output.should_receive(:puts).with('Welcome to the Bowling Game Algorithm!')
         algorithm.start
       end
-      it "prompts for the first roll" do
-        output.should_receive(:puts).with("Enter the number of pins fallen:")
-        algorithm.start
-      end
+      #it "prompts for the first roll" do
+      #  output.should_receive(:puts).with("Enter the number of pins fallen:")
+      #  algorithm.start
+      #end
     end
 
     context "#all ones" do
