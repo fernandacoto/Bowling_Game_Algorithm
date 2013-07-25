@@ -8,20 +8,12 @@ module Bowling_Game_Algorithm
         output.should_receive(:puts).with('Welcome to the Bowling Game Algorithm!')
         algorithm.start
       end
-      #it "prompts for the first roll" do
-      #  output.should_receive(:puts).with("Enter the number of pins fallen:")
-      #  algorithm.start
-      #end
     end
 
     context "#all ones" do
       it "returns 20" do
-        20.times do
-          algorithm.roll('1')
-        end
-        1.times do
-          algorithm.roll('0')
-        end
+        20.times { algorithm.roll('1') }
+        1.times { algorithm.roll('0') }
         algorithm.score.should == 20
       end
     end
