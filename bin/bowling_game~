@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'bowling_game'
-frame = 0
-game = Bowling_Game_Algorithm::Bowling_Algorithm.new(STDOUT)
-game.start
-
