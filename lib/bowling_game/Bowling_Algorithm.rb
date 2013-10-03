@@ -20,10 +20,10 @@ module Bowling_Game_Algorithm
       score = 0
       try = 0
       for frame in 0..9 do
-        if is_Spare?(frame)
+        if is_spare?(frame)
           score += 10 + @frames[frame + 2]
           try += 2
-        elsif is_Strike?(frame)
+        elsif is_strike?(frame)
           score += 10 + next_two_balls(frame)
           try += 1
         else
@@ -34,7 +34,7 @@ module Bowling_Game_Algorithm
       return score
     end
 
-    def is_Spare?(current_frame)
+    def is_spare?(current_frame)
       if current_frame + 1 < 21
         if @frames[current_frame] + @frames[current_frame + 1] == 10
           return true
@@ -44,7 +44,7 @@ module Bowling_Game_Algorithm
       end
     end
 
-    def is_Strike?(current_frame)
+    def is_strike?(current_frame)
       if @frames[current_frame] == 10
         return true
       else
