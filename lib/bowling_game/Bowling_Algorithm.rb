@@ -41,7 +41,7 @@ module Bowling_Game_Algorithm
         end
       else
         return false
-      end 
+      end
     end
 
     def is_Strike?(current_frame)
