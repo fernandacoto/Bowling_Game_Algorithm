@@ -1,7 +1,7 @@
 Bowling Game Algorithm
 ======================
 
-This is a bowling game algorithm made to understand ans start appling BDD. 
+This is a bowling game algorithm made to understand and start appling BDD. 
 It was made in ruby, using rspec to do the tests.
 Here are 2 folders:
 * lib: which contains the logic
