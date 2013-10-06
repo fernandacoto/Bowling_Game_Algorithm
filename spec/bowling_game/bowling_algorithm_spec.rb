@@ -43,8 +43,8 @@ module Bowling_Game_Algorithm
 
     context "#all strikes" do
       it "returns 300" do
-        12.times {algorithm.roll('10')}
-        9.times {algorithm.roll('0')}
+        12.times { algorithm.roll('10') }
+        9.times { algorithm.roll('0') }
         algorithm.score.should == 300
       end
     end
