@@ -37,21 +37,11 @@ module Bowling_Game_Algorithm
     end
 
     def is_spare?(current_frame)
-      if current_frame + 1 < TOTAL_FRAMES
-        if @frames[current_frame] + @frames[current_frame + 1] == SCORE_TEN
-          return true
-        end
-      else
-        return false
-      end
+      return ((current_frame + 1 < TOTAL_FRAMES) and (@frames[current_frame] + @frames[current_frame + 1] == SCORE_TEN))
     end
 
     def is_strike?(current_frame)
-      if @frames[current_frame] == SCORE_TEN
-        return true
-      else
-        return false
-      end
+      return @frames[current_frame] == SCORE_TEN
     end
 
     def next_two_balls(current_frame)
